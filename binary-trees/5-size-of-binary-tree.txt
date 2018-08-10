@@ -1,0 +1,300 @@
+// "static void main" must be defined in a public class.
+class BTNode {
+    int data;
+    BTNode left, right;
+    
+    BTNode(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+class BinaryTree {
+    BTNode root;
+    
+    BinaryTree() {
+        root = null;
+    }
+    
+    public void inOrderTraversal() {
+        inOrderTraversal(root);
+    }
+    
+    public void inOrderTraversal(BTNode root) {
+        if(root != null) {
+            inOrderTraversal(root.left);
+            System.out.print(" " + root.data + " ");
+            inOrderTraversal(root.right);
+        }
+    }
+    
+    public void preOrderTraversal() {
+        preOrderTraversal(root);
+    }
+    
+    public void preOrderTraversal(BTNode root) {
+        if(root != null) {
+            System.out.print(" " + root.data + " ");
+            preOrderTraversal(root.left);
+            preOrderTraversal(root.right);
+        }
+    }
+    
+    public void postOrderTraversal() {
+        postOrderTraversal(root);
+    }
+    
+    public void postOrderTraversal(BTNode root) {
+        if(root != null) {
+            postOrderTraversal(root.left);
+            postOrderTraversal(root.right);
+            System.out.print(" " + root.data + " ");
+        }
+    }
+    
+    public void levelOrderTraversal() {
+        levelOrderTraversal(root);
+    }
+    
+    public void levelOrderTraversal(BTNode root) {
+        Queue<BTNode> queue = new LinkedList<>();
+        
+        if(root == null) return;
+        
+        queue.offer(root);
+        
+        while(!queue.isEmpty()) {
+            BTNode node = queue.poll();
+            System.out.print(" " + node.data + " ");
+            if(node.left != null) queue.offer(node.left);
+            if(node.right != null) queue.offer(node.right);
+        }
+    }
+    
+    public Integer findMax() {
+        return findMax(root);
+    }
+    
+    public Integer findMax(BTNode root) {
+        int data, left, right, max = Integer.MIN_VALUE;
+        
+        if(root != null) {
+            data = root.data;
+            
+            left = findMax(root.left);
+            right = findMax(root.right);
+            
+            if(left > right) max = left;
+            else max = right;
+            
+            if(data > max) max = data;
+        }
+        
+        return max;
+    }
+    
+    public Integer findMaxI() {
+        return findMaxI(root);
+    }
+    
+    public Integer findMaxI(BTNode root) {
+        Queue<BTNode> queue = new LinkedList<>();
+        int max = Integer.MIN_VALUE;
+        
+        if(root == null)
+            return max;
+        
+        queue.add(root);
+        
+        while(!queue.isEmpty()) {
+            BTNode node = queue.poll();
+            
+            if(node.data > max) max = node.data;
+            
+            if(node.left != null) queue.add(node.left);
+            if(node.right != null) queue.add(node.right);
+        }
+        
+        return max;
+        
+    }
+    
+    public boolean contains(int key) {
+        return contains(root, key);
+    }
+    
+    public boolean contains(BTNode root, int key) {
+        if(root == null)
+            return false;
+        else {
+            if(root.data == key) return true;
+            else {
+                boolean left = contains(root.left, key);
+                if(left)
+                    return true;
+                else
+                    return contains(root.right, key);
+            }
+        }
+    }
+    
+    public boolean containsI(int key) {
+        return containsI(root, key);
+    }
+    
+    public boolean containsI(BTNode root, int key) {
+        Queue<BTNode> queue = new LinkedList<>();
+        
+        if(root == null)
+            return false;
+        
+        queue.add(root);
+        
+        while(!queue.isEmpty()) {
+            BTNode node = queue.poll();
+            
+            if(node.data == key) return true;
+            
+            if(node.left != null) queue.add(node.left);
+            if(node.right != null) queue.add(node.right);
+        }
+        
+        return false;
+        
+    }
+    
+    public void insert(int data) {
+        root = insert(root, data);
+    }
+    
+    public BTNode insert(BTNode root, int data) {
+        Queue<BTNode> queue = new LinkedList<>();
+        
+        if(root == null) {
+            root = new BTNode(data);
+            return root;
+        }
+        else {
+            queue.add(root);
+            
+            while(!queue.isEmpty()) {
+                BTNode node = queue.poll();
+                
+                if(node.left == null) {
+                    node.left = new BTNode(data);
+                    break;
+                }
+                else {
+                    queue.add(node.left);
+                }
+                
+                if(node.right == null) {
+                    node.right = new BTNode(data);
+                    break;
+                }
+                else {
+                    queue.add(node.right);
+                }
+            }
+        }
+        
+        return root;
+        
+    }
+    
+    public int size() {
+        return size(root);
+    }
+    
+    public int size(BTNode root) {
+        if(root == null)
+            return 0;
+        
+        return size(root.left) + 1 + size(root.right);
+    }
+    
+}
+public class Main {
+    
+    public static void main(String[] args) {
+        BinaryTree bt = new BinaryTree();
+        // bt.root = new BTNode(1);
+        // bt.root.left = new BTNode(2);
+        // bt.root.right = new BTNode(3);
+        // bt.root.left.left = new BTNode(4);
+        // bt.root.left.right = new BTNode(5);
+        // bt.root.right.left = new BTNode(6);
+        // bt.root.right.right = new BTNode(7);
+        
+        bt.insert(1);
+        bt.insert(2);
+        bt.insert(3);
+        bt.insert(4);
+        bt.insert(5);
+        bt.insert(6);
+        bt.insert(7);
+        
+        // Pre Order
+        System.out.print("Pre Order: ");
+        bt.preOrderTraversal();
+        
+        System.out.println();
+        
+        // In Order
+        System.out.print("In Order: ");
+        bt.inOrderTraversal();
+        
+        System.out.println();
+        
+        // Post Order
+        System.out.print("Post Order: ");
+        bt.postOrderTraversal();
+        
+        System.out.println();
+        
+        // Level Order
+        System.out.print("Level Order: ");
+        bt.levelOrderTraversal();
+        
+        System.out.println();
+        
+        // Find Max
+        System.out.println("Max Value: " + bt.findMax());
+        
+        // Find Max Iterative
+        System.out.println("Max Value: " + bt.findMaxI());
+        
+        // Contains
+        int key = 3;
+        if(bt.contains(key))
+            System.out.println(key + " found");
+        
+        // Contains
+        key = 6;
+        if(bt.containsI(key))
+            System.out.println(key + " found");
+        
+        // Size
+        System.out.println("Size: " + bt.size());
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

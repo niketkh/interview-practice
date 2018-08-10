@@ -1,0 +1,14 @@
+Useful references
+
+-> Binary Search Tree Insertion and Search
+	https://www.geeksforgeeks.org/binary-search-tree-set-1-search-and-insertion/
+
+-> Binary Search Tree Deletion
+	https://www.geeksforgeeks.org/binary-search-tree-set-2-delete/
+	
+-> Red Black Trees
+	https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/
+	https://www.geeksforgeeks.org/red-black-tree-set-2-insert/
+
+-> AVL Trees
+	https://www.geeksforgeeks.org/avl-tree-set-1-insertion/

@@ -1,0 +1,8 @@
+// Zigzag Order Tree Traversal
+
+// Use Two Stacks currentLevel and nextLevel
+// Also flag for leftToRight represents ordering in currentLevel; Initially true
+// Add root to currentLevel
+// Pop elements from currentLevel
+// Push elements in nextLevel based on flag 
+// When currentLevel becomes empty, swap currentLevel and nextLevel

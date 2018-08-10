@@ -1,0 +1,32 @@
+-> Linear Search
+
+-> Binary Search 
+
+-> Binary Search Optimised 
+
+-> Find floor of number in a sorted array
+
+-> Find first occurence of a number in a sorted array
+
+-> Find last occurence of a number in a sorted array
+
+-> Find number of occurences of a number in sorted array
+
+-> Find minimum in cyclically rotated sorted array
+
+-> Find a number in cyclically rotated sorted array
+
+-> Find integer square root of a number
+
+-> Find real square root of a number
+
+-> Search in 2D sorted array
+
+References
+==========
+
+-> Geeks for Geeks (Binary Search, Binary Search Optimised, Floor, First Occurence, Last Occurence,
+	No of occurences, Search in rotated sorted array)
+	https://www.geeksforgeeks.org/the-ubiquitous-binary-search-set-1/
+
+-> Searching Chapter in EPI

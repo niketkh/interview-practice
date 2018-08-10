@@ -1,0 +1,5 @@
+// Give an algorithm to convert a tree to its mirror
+
+// mirror(root.left)
+// mirror(root.right)
+// swap left and right pointers

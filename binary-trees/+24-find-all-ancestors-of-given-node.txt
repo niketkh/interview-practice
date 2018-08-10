@@ -1,0 +1,4 @@
+// Find all ancestors of given node
+
+// root.left == node || root.right == node || findAncestors(root.left, node) || findAncestors(root.right, node)
+// print root.data

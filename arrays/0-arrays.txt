@@ -1,0 +1,175 @@
+Arrays Problems
+===============
+
+-> Missing number in an array
+	https://www.geeksforgeeks.org/find-the-missing-number/
+
+-> Delete duplicates from an array
+
+-> Delete duplicates from a sorted array
+
+-> Kadane Algorithm or Finding maximum sum ***
+	https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
+
+-> Subarray with given sum
+	https://www.geeksforgeeks.org/find-subarray-with-given-sum/
+
+-> Sort an array of 0s, 1s and 2s or Dutch National Flag Problem ***
+	https://www.geeksforgeeks.org/sort-array-0s-1s-2s-simple-counting/
+	
+	https://www.geeksforgeeks.org/sort-an-array-of-0s-1s-and-2s/
+
+-> Longest Increasing Subsequence
+	https://www.geeksforgeeks.org/?p=12832
+
+-> Maximum Sum Increasing Subsequence
+	https://www.geeksforgeeks.org/dynamic-programming-set-14-maximum-sum-increasing-subsequence/
+
+-> Kth smallest element [or Kth largest element] ***
+	[Use Selection / Bubble Sort - O(n*k)
+	or Use Sorting techniques like Heap Sort or Merge Sort or Quick Sort - O(nlogn)
+	or Use Min Heap - O(n + klogn)
+	or Use Max Heap - O(k + (n-k) * logk + klogk)
+	or Use Oder Statistics 
+	or Use Quick Sort Partition to find Kth largest then sort k-1 elements - O(n + klogk)]
+
+	https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array/
+
+	https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-2-expected-linear-time/
+
+	https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/
+
+
+-> Get K smallest elements [or Get K largest elements]
+	[Use Selection / Bubble Sort - O(n*k)
+	OR Use Sorting techniques like Heap Sort or Merge Sort or Quick Sort - O(nlogn)
+	OR Use Min Heap - O(n + klogn)
+	OR Use Max Heap - O(k + (n-k) * logk)
+	OR Use Quick Sort Partition to find Kth largest - O(n)]
+
+	https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
+
+-> Kth largest element in stream ***
+	[Use Min Heap - O(k + (n-k) * logk)]
+
+-> Trapping Rain Water ***
+	[For each element, find highest bars on the left and right; Take smaller of two heights; 
+	Diff between smaller height and height of current elment gives amount of water that can be stored - O(n^2)
+	OR Precompute highest left and right bars for each bar in left and right arrays and 
+	   use it to calculate amount of water trapped - O(n)
+	OR Maintain two variables for leftMax and rightMax, 
+	   since water trapped at any element is min(leftMax, rightMax) - currentElement - O(n)]
+
+	https://www.geeksforgeeks.org/trapping-rain-water/
+
+	https://leetcode.com/problems/trapping-rain-water/discuss/17357/Sharing-my-simple-c++-code:-O(n)-time-O(1)-space
+
+-> Maximum difference between two elements such that smaller element appears before larger element
+	[Keep track of maxDiff, minElement]
+	https://www.geeksforgeeks.org/maximum-difference-between-two-elements/
+
+-> Buy and Sell Stock Once ***
+	https://www.geeksforgeeks.org/maximum-difference-between-two-elements/
+
+-> Buy and Sell Stock Twice 
+
+-> Buy and Sell Multiple Times
+	https://www.geeksforgeeks.org/stock-buy-sell/
+
+-> Boolean Matrix Problem ***
+
+-> Search in Rotated Array ***
+
+-> Majority Element ***
+
+-> Search in 2D sorted array ***
+
+-> Rotate a 2D array ***
+
+-> Compute spiral ordering of 2D array ***
+
+-> Zero Matrix 
+
+-> Find Duplicate and Missing ***
+
+-> Enumerate all primes to n
+
+-> Permute the elements of an array
+
+-> Compute next permutation
+
+-> Compute random permutation
+
+-> Compute a random subset
+
+-> Sample offline data
+
+-> Sample online data
+
+-> Generate non uniform random numbers
+
+-> Compute rows in a pascal triangle
+
+
+-> Equilibrium Point
+
+
+-> Leaders in an array
+
+-> Minimum Platforms
+
+-> Maximum of all subarrays of size k
+
+-> Reverse array in groups
+
+-> Pythagorean Triplet
+
+-> Chocolate Distribution Problem
+
+-> Element with left side smaller and right side greater
+
+-> Convert array in Zig Zag fashion
+
+-> Find element that appears once in sorted array
+
+-> Relative Sorting
+
+-> Spirally traversing a matrix
+
+-> Sorting Elements of an Array by Frequency
+
+-> Largest Number formed from an Array
+
+-> Largest subarray of 0's and 1's
+
+-> Most frequent word in an array of strings
+
+-> Maximum Index
+
+-> Sum of middle elements of two sorted arrays
+
+-> Consecutive 1's not allowed 
+
+-> Two numbers with sum closest to zero
+
+-> Nuts and Bolts Problem
+
+-> Find all four sum numbers
+
+-> Common elements
+
+-> Smallest positive missing number
+
+-> Count the triplets
+
+-> Maximum Index
+
+-> Jumping caterpillars
+
+
+References
+==========
+-> Must do coding questions
+	https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/
+
+-> 

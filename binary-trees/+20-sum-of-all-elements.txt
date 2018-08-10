@@ -1,0 +1,4 @@
+// Given an algorithm to find sum of all elements
+// root.data + sum(root.left) + sum(root.right)
+
+// Use Level Order to find sum of all elements in iterative way

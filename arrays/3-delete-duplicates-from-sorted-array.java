@@ -1,0 +1,3 @@
+/*
+	Traverse array using two indexes skipping duplicates
+*/

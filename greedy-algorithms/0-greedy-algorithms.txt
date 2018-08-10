@@ -1,0 +1,79 @@
+Problems
+========
+
+-> The 3 sum problem (EPI - 18.4)
+
+-> The gasup problem (EPI - 18.6)
+
+-> Find the majority element (EPI - 18.5)
+
+-> Compute maximum water trapped by pair of vertical lines (EPI - 18.7)
+
+-> Compute largest rectangle under the skyline (EPI - 18.8)
+
+-> Compute an optimum assignment of tasks (EPI - 18.1)
+
+-> Schedule to minimize waiting time (EPI - 18.2)
+
+-> The interval covering problem (EPI - 18.3)
+
+-> Activity Selection
+	https://www.geeksforgeeks.org/greedy-algorithms-set-1-activity-selection-problem/
+
+-> N meetings in one room (Same as Activity Selection)
+	https://www.geeksforgeeks.org/greedy-algorithms-set-1-activity-selection-problem/
+
+-> Coin Piles
+	https://practice.geeksforgeeks.org/problems/coin-piles/0
+
+-> Minimum number of coins 
+	https://www.geeksforgeeks.org/greedy-algorithm-to-find-minimum-number-of-coins/
+
+-> Maximize Toys
+
+-> Page Faults in LRU
+
+-> Largest number of possible
+
+-> Minimize the heights
+
+-> Minimize the sum of product
+
+-> Huffman Decoding
+
+-> Max length chain
+
+-> Minimum Spanning Tree
+
+-> Minimum Operations
+
+-> Shop in Candy Store
+
+-> Geek collect the balls
+
+
+
+References
+==========
+-> Geeks for Geeks
+	https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/#More%20Questions%20on%20Arrays
+
+-> Refer chapter on Greedy Algorithms in EPI
+
+-> Must Do EPI (18.4, 18. 6, 18.5, 18.7, 18.8)
+
+-> Some standard algorithms that use greedy approach
+	-> Fractional Knapsack
+		http://www.cs.binghamton.edu/~dima/cs333/knapsack.ppt
+
+	-> Kruskal's Minimum Spanning Tree 
+		https://www.geeksforgeeks.org/greedy-algorithms-set-2-kruskals-minimum-spanning-tree-mst/
+
+	-> Prim's Minimum Spanning Tree
+		https://www.geeksforgeeks.org/prims-algorithm-using-priority_queue-stl/
+
+	-> Dijkstra's Shortest Path
+		https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/
+
+	-> Huffman Coding
+		https://www.geeksforgeeks.org/greedy-algorithms-set-6-dijkstras-shortest-path-algorithm/

@@ -1,0 +1,98 @@
+Dynamic Programming Problems
+============================
+
+-> Fing Ugly Numbers
+	https://www.geeksforgeeks.org/ugly-numbers/
+
+-> Find Factorial
+
+-> Find Fibonacci
+	https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
+
+-> Given set of numbers, find number of ways a sum can be achieved using given set of numbers
+	https://www.geeksforgeeks.org/solve-dynamic-programming-problem/
+
+-> Find Combinations or Binomial Coefficients
+	https://en.wikipedia.org/wiki/Binomial_coefficient
+
+	https://www.geeksforgeeks.org/dynamic-programming-set-9-binomial-coefficient/
+
+
+-> Permutation Coefficient
+	https://www.geeksforgeeks.org/permutation-coefficient/
+
+-> Catalan Numbers
+	https://www.geeksforgeeks.org/program-nth-catalan-number/
+
+-> Numbers of ways to partition a set of n elements into k subsets
+	https://en.wikipedia.org/wiki/Stirling_numbers_of_the_second_kind
+
+	https://www.geeksforgeeks.org/count-number-of-ways-to-partition-a-set-into-k-subsets/
+
+-> Bell Numbers or Number of ways to Partition a Set
+
+	https://en.wikipedia.org/wiki/Bell_number
+
+	https://www.geeksforgeeks.org/bell-numbers-number-of-ways-to-partition-a-set/
+
+-> Tiling Problem
+	https://www.geeksforgeeks.org/tiling-problem/
+
+-> Gold Problem??
+	https://www.geeksforgeeks.org/gold-mine-problem/
+
+-> Coin Change Problem
+	https://www.geeksforgeeks.org/dynamic-programming-set-7-coin-change/
+
+-> Longest Increasing Subsequence
+	https://www.geeksforgeeks.org/longest-increasing-subsequence/
+
+	https://www.geeksforgeeks.org/longest-monotonically-increasing-subsequence-size-n-log-n/
+
+-> Longest Common Subsequence
+
+-> 0 - 1 Knapsack Problem
+
+-> Minimum number of jumps
+
+-> Edit Distance
+
+-> Coin Change Problem
+
+-> Subset Problem
+
+-> Box Stacking
+
+-> Rod Cutting
+
+-> Path in Matrix
+
+-> Minimum Sum Partition
+
+-> Count number of ways to cover a distance
+
+-> Egg Dropping Puzzle
+
+-> Optimal Strategy Game
+
+-> Shortest Common Super Sequence
+
+Useful References
+=================
+
+-> Geeks for Geeks
+	https://www.geeksforgeeks.org/dynamic-programming/
+	
+-> Tabulation (Bottom Up) vs Memoization (Top Down)
+	https://www.geeksforgeeks.org/tabulation-vs-memoizatation/
+	
+-> How to solve a Dynamic Programming Problem
+	https://www.geeksforgeeks.org/solve-dynamic-programming-problem/
+	
+-> Overlapping Subproblems Property
+	https://www.geeksforgeeks.org/dynamic-programming-set-1/
+	
+-> Optimal Substructure Property
+	https://www.geeksforgeeks.org/dynamic-programming-set-2-optimal-substructure-property/
+
+	

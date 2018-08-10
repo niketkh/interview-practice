@@ -1,0 +1,319 @@
+System Design Terminology
+=========================
+
+-> Performance 
+
+-> Throughput
+
+-> Latency
+
+-> Scalability
+	-> Vertical Scaling
+	-> Horizontal Scaling
+	
+-> Consistency
+	-> Weak Consistency
+	-> Eventual Consistency
+	-> Strong Consistency
+	
+-> Availability
+	-> Fail Over
+		-> Active Active
+		-> Active Passive
+		
+	-> Replication
+		-> Master Slave 
+		-> Master Master
+		
+	-> Shared Nothing Architecture
+
+-> Reliability
+
+-> Partition Tolerance
+
+-> CAP Theorem
+
+-> Efficiency
+
+-> Load Balancing
+	-> Load Balancing Algorithms
+		-> Least Connection Method
+		-> Least Response Time Method
+		-> Least Bandwidth Method
+		-> Round Robin Method
+		-> Weighted Round Robin Method
+		-> IP Hash
+		
+	-> Place a Load Balancer
+		-> Between Client and Application Server
+		-> Between Application Server and Caching Server
+		-> Between Application Server and Database Server
+
+-> Caching
+	-> Types of Cache
+		-> Application Server Cache
+		-> Distributed Cache
+		-> Global Cache
+		-> Content Distribution Networks
+	
+	-> Cache Write Policies or Cache Invalidation Policies
+		-> Write Through Cache
+		-> Write Aside Cache or Write Around Cache
+		-> Write Back Cache
+	
+	-> Cache Eviction Policies
+		-> First In First Out
+		-> Last In First Out
+		-> Least Recently Used
+		-> Most Recently Used
+		-> Least Frequently Used
+		-> Random Replacement
+		
+	-> Cache Miss
+	-> Cache Hit
+		
+-> Database
+	-> RDBMS or SQL Databases
+		-> E.g. MySQL, Oracle, MS SQL Server, IBM DB2, SQLite, Postgres, MariaDB
+	
+	-> No SQL Databases
+		-> Key Value Databases
+			-> Redis, Voldermort, Dynamo
+			
+		-> Document Databases
+			-> E.g. MongoDB, CouchDB
+			
+		-> Wide-Column Databases
+			-> E.g. Cassandra, HBase
+			
+		-> Graph Databases
+			-> E.g. Neo4J, Infinite Graph
+			
+	-> SQL vs No SQL
+		-> Storage
+		-> Schema
+		-> Querying
+		-> Scalability
+		-> Reliability or ACID Compliance
+	
+	-> ACID (Atomicity, Consistency, Isolation, Durability) Property for SQL Databases
+	
+	-> BASE (Basically Available Soft State and Eventual Consistency) Property for No SQL Databases
+	
+	-> Normalization
+		-> 1st NF
+		-> 2nd NF
+		-> 3rd NF
+		-> 4th NF
+		-> 5th NF
+		
+	-> Indexes
+		-> Clustered Indexes
+		-> Non-Clustered Indexes
+		
+-> Partitioning / Sharding
+	-> Methods
+		-> Horizontal Partitioning or Range Based Sharding
+		-> Vertical Partitioning
+		-> Directory Based Partitioning
+
+	-> Partitioning Criteria
+		-> Key or Hash based Partitioning
+		-> List Partitioning
+		-> Round-robin Partitioning
+		-> Composite Partitioning
+		
+		
+		
+-> Consistent Hashing
+		
+-> Queues
+	-> RabbitMQ, ZeroMQ, ActiveMQ, BeanStalkD
+		
+-> Proxies
+	-> Reverse Proxy Server
+
+-> Client Server Communication Protocols
+
+	-> Ajax Polling
+	
+	-> Long Polling or Hanging GET
+	
+	-> Server Sockets
+	
+	-> Server Sent Events
+	
+-> Networking
+	-> OSI (Open System Interconnection) Model (7 Layers)
+		-> Application Layer 	(Layer 7)
+			E.g. WWW Browsers, Telnet, FTP, SNMP, NFS, HTTP
+			
+		-> Presentation Layer 	(Layer 6)
+			E.g. Encryption, Decryption, ASCII, EBCDIC, TIFF, GIF, JPEG, MPEG, MIDI, PICT
+			
+		-> Session Layer 		(Layer 5)
+			E.g. NFS, NetBios, SQL, RPC
+			
+		-> Transport Layer 		(Layer 4)
+			E.g. TCP, UDP, SPX
+			
+		-> Network Layer 		(Layer 3)
+			E.g. IP, IPX, AppleTalk DDP
+			
+		-> Data Link Layer 		(Layer 2)
+			-> Two Layers: Media Access Control (MAC) Layer and Logical Link Control (LLC) Layer
+			E.g. PPP, FDDI, ATM, IEEE 802.5/802.2, IEEE 802.3/802.2, HDLC, Frame Relay
+				
+		-> Physical Layer 		(Layer 1)
+			E.g. Ethernet, Fast Ethernet, FDDI, B8ZS, RJ45, V.35, V.24
+	
+	-> DoD (Department of Defence) Model or TCP IP Model (4 Layers)
+		-> Application Layer 		(Layer 4)
+			E.g. HTTP, HTTPS (HTTP with SSL), Telnet, FTP, TFTP, SSH, SMTP, SNMP, DHCP, DNS, NFS, LPD, NTP
+			
+		-> Transport Layer 			(Layer 3)
+			E.g. TCP, UDP
+			
+		-> Internet Layer 			(Layer 2)
+			E.g. IP, ICMP, ARP, RARP
+			
+		-> Network Access Layer		(Layer 1)
+			E.g. LAN, ARPANET, SATNET, Packet Radio
+	
+	-> TCP (Transmission Control Protocol)
+	
+	-> UDP (User Datagram Protocol)
+	
+	-> IP (Internet Protocol)
+	
+	-> DNS (Domain Name System)
+	
+
+-> Useful Vendor Products
+	-> Distributed Storage
+		-> HDFS (Hadoop Distributed File System)
+			https://en.wikipedia.org/wiki/Apache_Hadoop
+
+		-> Amazon S3 (Simple Storage Service)
+			https://en.wikipedia.org/wiki/Amazon_S3
+
+		-> Gluster FS
+			https://en.wikipedia.org/wiki/Gluster#GlusterFS
+
+	-> Distributed Processing
+		-> Hadoop Map Reduce 
+			https://en.wikipedia.org/wiki/Apache_Hadoop
+
+		-> Amazon EC2 (Elastic Cloud Compute)
+
+	-> Distributed Cache
+		-> Redis
+		-> Memcached
+		-> Hazelcast
+		-> Ehcache
+
+	-> SQL Databases
+		-> Oracle
+		-> MySQL
+		-> MS SQL Server
+		-> PostgreSQL
+		-> IBM DB2
+		-> SQLite
+		-> Maria DB
+
+	-> No SQL Databases
+		-> Document Databases
+			-> Mongo DB
+			-> Counch DB
+			-> Dynamo DB
+				https://en.wikipedia.org/wiki/Dynamo_(storage_system)
+			-> Microsoft Azure Cosmos DB
+
+		-> Key Value Databases
+			-> Redis
+			-> Memcached
+			-> Dynamo DB
+				https://en.wikipedia.org/wiki/Dynamo_(storage_system)
+
+			-> Voldemort
+			-> Microsoft Azure Cosmos DB
+
+		-> Wide Column Databases
+			-> Apache HBase
+			-> Apache Cassandra
+				https://en.wikipedia.org/wiki/Apache_Cassandra
+			-> Microsoft Azure Cosmos DB
+			-> Google Cloud Big Table
+			-> Azure Table Storage
+
+		-> Graph Databases
+			-> Neo4j
+			-> Microsoft Azure Cosmos DB
+			-> Infinite Graph
+
+		-> Search Engine
+			-> Elastic Search
+			-> Splunk
+			-> Solr
+
+	-> Useful Apache Products
+		-> Apache Tomcat
+		-> Apache Hadoop
+			-> Hadoop Common
+			-> Hadoop Distributed File System (HDFS)
+			-> Hadoop YARN
+			-> Hadoop Map Reduce
+		-> Apache Pig
+		-> Apache Hive
+		-> Apache HBase
+		-> Apache Cassandra
+			https://en.wikipedia.org/wiki/Apache_Cassandra
+		-> Apache Spark
+		-> Apache Zookeeper
+		-> Apache Lucene
+		-> Apache Solr
+		-> Apache Storm
+		-> Apache Sqoop
+		-> Apache Oozie
+		-> Apache Flume
+		-> Apache Phoenix
+
+	-> Useful Amazon Products
+		-> Amazon S3 (Simple Storage Service)
+			https://en.wikipedia.org/wiki/Amazon_S3
+
+		-> Amazon EC2 (Amazon Elastic Cloud Compute)
+
+
+-> Features of Apache Cassandra
+	-> Most Popular No SQL Wide Column Database
+	-> Distributed
+		-> No single point of failure
+		-> Every node can service a request
+	-> Supports replication and multi data center replication
+		-> Distrbuted architecture tailored for multi-data center deployment, for redundancy, for failover and disaster recovery
+		-> Replication strategies are configurable
+	-> Scalability
+		-> Designed to have read and write throughput both increase linearly as new machines are added
+	-> Fault Tolerant
+		-> Data is automatically replicated to multiple nodes for fault tolerance
+		-> Failed nodes can be replaced with no downtime
+	-> Tunable Consistency
+		-> Classified as AP (Availability, Partition Tolerance) system 
+		-> Writes and read offer tunable level of consistency
+		-> From "writes never fail" to "block for all replicas to be readable" with quorum level in the middle
+	-> MapReduce Support
+		-> Cassandra has Hadoop Integration with MapReduce support
+		-> Support for Apache Pig and Apache Hive
+	-> Query Language
+		-> Cassandra Query Language (CQL)
+	
+	
+-> Useful References
+	-> Ranking for databases
+		https://db-engines.com/en/ranking/	
+	
+	
+	
+	
+

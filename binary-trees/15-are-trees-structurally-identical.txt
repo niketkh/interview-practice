@@ -1,0 +1,432 @@
+// "static void main" must be defined in a public class.
+class BTNode {
+    int data;
+    BTNode left, right;
+    
+    BTNode(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+class BinaryTree {
+    BTNode root;
+    
+    BinaryTree() {
+        root = null;
+    }
+    
+    public void traverse() {
+        levelOrderTraversal(root);
+        System.out.println();
+    }
+    
+    public void inOrderTraversal() {
+        inOrderTraversal(root);
+    }
+    
+    public void inOrderTraversal(BTNode root) {
+        if(root != null) {
+            inOrderTraversal(root.left);
+            System.out.print(" " + root.data + " ");
+            inOrderTraversal(root.right);
+        }
+    }
+    
+    public void preOrderTraversal() {
+        preOrderTraversal(root);
+    }
+    
+    public void preOrderTraversal(BTNode root) {
+        if(root != null) {
+            System.out.print(" " + root.data + " ");
+            preOrderTraversal(root.left);
+            preOrderTraversal(root.right);
+        }
+    }
+    
+    public void postOrderTraversal() {
+        postOrderTraversal(root);
+    }
+    
+    public void postOrderTraversal(BTNode root) {
+        if(root != null) {
+            postOrderTraversal(root.left);
+            postOrderTraversal(root.right);
+            System.out.print(" " + root.data + " ");
+        }
+    }
+    
+    public void levelOrderTraversal() {
+        levelOrderTraversal(root);
+    }
+    
+    public void levelOrderTraversal(BTNode root) {
+        Queue<BTNode> queue = new LinkedList<>();
+        
+        if(root == null) return;
+        
+        queue.offer(root);
+        
+        while(!queue.isEmpty()) {
+            BTNode node = queue.poll();
+            System.out.print(" " + node.data + " ");
+            if(node.left != null) queue.offer(node.left);
+            if(node.right != null) queue.offer(node.right);
+        }
+    }
+    
+    public Integer findMax() {
+        return findMax(root);
+    }
+    
+    public Integer findMax(BTNode root) {
+        int data, left, right, max = Integer.MIN_VALUE;
+        
+        if(root != null) {
+            data = root.data;
+            
+            left = findMax(root.left);
+            right = findMax(root.right);
+            
+            if(left > right) max = left;
+            else max = right;
+            
+            if(data > max) max = data;
+        }
+        
+        return max;
+    }
+    
+    public Integer findMaxI() {
+        return findMaxI(root);
+    }
+    
+    public Integer findMaxI(BTNode root) {
+        Queue<BTNode> queue = new LinkedList<>();
+        int max = Integer.MIN_VALUE;
+        
+        if(root == null)
+            return max;
+        
+        queue.add(root);
+        
+        while(!queue.isEmpty()) {
+            BTNode node = queue.poll();
+            
+            if(node.data > max) max = node.data;
+            
+            if(node.left != null) queue.add(node.left);
+            if(node.right != null) queue.add(node.right);
+        }
+        
+        return max;
+        
+    }
+    
+    public boolean contains(int key) {
+        return contains(root, key);
+    }
+    
+    public boolean contains(BTNode root, int key) {
+        if(root == null)
+            return false;
+        else {
+            if(root.data == key) return true;
+            else {
+                boolean left = contains(root.left, key);
+                if(left)
+                    return true;
+                else
+                    return contains(root.right, key);
+            }
+        }
+    }
+    
+    public boolean containsI(int key) {
+        return containsI(root, key);
+    }
+    
+    public boolean containsI(BTNode root, int key) {
+        Queue<BTNode> queue = new LinkedList<>();
+        
+        if(root == null)
+            return false;
+        
+        queue.add(root);
+        
+        while(!queue.isEmpty()) {
+            BTNode node = queue.poll();
+            
+            if(node.data == key) return true;
+            
+            if(node.left != null) queue.add(node.left);
+            if(node.right != null) queue.add(node.right);
+        }
+        
+        return false;
+        
+    }
+    
+    public void insert(int data) {
+        root = insert(root, data);
+    }
+    
+    public BTNode insert(BTNode root, int data) {
+        Queue<BTNode> queue = new LinkedList<>();
+        
+        if(root == null) {
+            root = new BTNode(data);
+            return root;
+        }
+        else {
+            queue.add(root);
+            
+            while(!queue.isEmpty()) {
+                BTNode node = queue.poll();
+                
+                if(node.left == null) {
+                    node.left = new BTNode(data);
+                    break;
+                }
+                else {
+                    queue.add(node.left);
+                }
+                
+                if(node.right == null) {
+                    node.right = new BTNode(data);
+                    break;
+                }
+                else {
+                    queue.add(node.right);
+                }
+            }
+        }
+        
+        return root;
+        
+    }
+    
+    public int size() {
+        return size(root);
+    }
+    
+    public int size(BTNode root) {
+        if(root == null)
+            return 0;
+        
+        return size(root.left) + 1 + size(root.right);
+    }
+    
+    // Use Level Order Traversal to find height in interative way
+    
+    
+    public void clear() {
+        this.root = clear(root);
+    }
+    
+    public BTNode clear(BTNode root) {
+        if(root != null) {
+            root.left = clear(root.left);
+            root.right = clear(root.right);
+            root = null;
+        }
+        
+        return null;
+    }
+    
+    public void reverseLevelOrderTraversal() {
+        reverseLevelOrderTraversal(root);
+    }
+    
+    public void reverseLevelOrderTraversal(BTNode root) {
+        Queue<BTNode> queue = new LinkedList<>();
+        LinkedList<BTNode> stack = new LinkedList<>();
+        
+        if(root == null)
+            return;
+        
+        queue.add(root);
+        
+        while(!queue.isEmpty()) {
+            BTNode node = queue.poll();
+            stack.push(node);
+            
+            if(node.left != null) queue.add(node.left);
+            if(node.right != null) queue.add(node.right);
+        }
+        
+        while(!stack.isEmpty()) {
+            System.out.print(" " + stack.pop().data + " ");
+        }
+    }
+    
+    public int height() {
+        return height(root);
+    }
+    
+    public int height(BTNode root) {
+        int leftHeight, rightHeight;
+        if(root == null)
+            return 0;
+        
+        leftHeight = height(root.left);
+        rightHeight = height(root.right);
+        
+        return Math.max(leftHeight, rightHeight) + 1;
+    }
+    
+    // Use Level Order Traversal to find height in interative way; use NULL to indicate end of level
+    
+    // Use Level Order Traversal to find deepest node of binary tree
+    
+    // Deleting a node in Binary Tree
+    // Find the node to be deleted and find the deepest node 
+    // Swap deepest node data with node to be deleted, delete the deepest node
+    
+    public void printLeaves() {
+        printLeaves(root);
+    }
+    
+    // Print Leaves - Left to Right
+    // To get right to left, simply traverse right subtree and then left subtree
+    public void printLeaves(BTNode root) {
+        if(root != null) {
+            printLeaves(root.left);
+            if(root.left == null && root.right == null)
+                System.out.print(" " + root.data + " ");
+            printLeaves(root.right);
+        }
+    }
+    
+    public int numOfLeaves() {
+        return numOfLeaves(root);
+    }
+    
+    public int numOfLeaves(BTNode root) {
+        if(root == null)
+            return 0;
+        
+        else if(root.left == null && root.right == null)
+            return 1;
+        
+        else 
+            return numOfLeaves(root.left) + numOfLeaves(root.right);
+    }
+    
+    // Use Level Order to find number of leaves iteratively
+    
+    
+    public int numOfFullNodes() {
+        return numOfFullNodes(root);
+    }
+    
+    public int numOfFullNodes(BTNode root) {
+        if(root == null)
+            return 0;
+        
+        else if(root.left == null && root.right != null)
+            return numOfFullNodes(root.right);
+        
+        else if(root.left != null && root.right == null) 
+            return numOfFullNodes(root.left);
+        
+        else if(root.left == null && root.right == null)
+            return 0;
+        
+        else 
+            return numOfFullNodes(root.left) + 1 + numOfFullNodes(root.right);
+    }
+    
+    // Use Level Order to find number of full nodes iteratively
+    
+    public int numOfHalfNodes() {
+        return numOfHalfNodes(root);
+    }
+    
+    public int numOfHalfNodes(BTNode root) {
+        if(root == null)
+            return 0;
+        
+        else if(root.left == null && root.right == null)
+            return 0;
+        
+        else if(root.left == null && root.right != null)
+            return 1 + numOfHalfNodes(root.right);
+        
+        else if(root.left != null && root.right == null)
+            return 1 + numOfHalfNodes(root.left);
+        
+        else 
+            return numOfHalfNodes(root.left) + numOfHalfNodes(root.right);
+    }
+    
+    // Use Level Order to find number of half nodes iteratively
+}
+
+public class Main {
+    
+    public static boolean areTreesStructurallyIdentical(BinaryTree bt1, BinaryTree bt2) {
+        return areTreesStructurallyIdentical(bt1.root, bt2.root);
+    }
+    
+    public static boolean areTreesStructurallyIdentical(BTNode root1, BTNode root2) {
+        if(root1 == null && root2 == null)
+            return true;
+        
+        if(root1 == null || root2 == null)
+            return false;
+        
+        return (root1.data == root2.data) && 
+            areTreesStructurallyIdentical(root1.left, root2.left) &&
+            areTreesStructurallyIdentical(root1.right, root2.right);
+            
+    }
+    
+    public static void main(String[] args) {
+        BinaryTree bt1 = new BinaryTree();
+        
+        bt1.insert(1);
+        bt1.insert(2);
+        bt1.insert(3);
+        bt1.insert(4);
+        bt1.insert(5);
+        bt1.insert(6);
+        // bt.insert(7);
+        
+        BinaryTree bt2 = new BinaryTree();
+        bt2.insert(1);
+        bt2.insert(2);
+        bt2.insert(3);
+        bt2.insert(4);
+        bt2.insert(5);
+        // bt2.insert(7);
+        
+        bt1.traverse();
+        bt2.traverse();
+        System.out.println("Are Trees Structurally Identical: " + 
+                           areTreesStructurallyIdentical(bt1, bt2));
+        
+        
+        
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
