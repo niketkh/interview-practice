@@ -1,0 +1,93 @@
+Amazon
+======
+
+Coding Questions
+================
+
+-> Minimum time required to rot all oranges (Queue of rotten oranges and BFS)
+	https://www.geeksforgeeks.org/minimum-time-required-so-that-all-oranges-become-rotten/
+	
+-> Count distinct elements in every window (HashMap of Element and Count)
+	https://www.geeksforgeeks.org/count-distinct-elements-in-every-window-of-size-k/
+	
+-> Lexicographically smallest string formed by appending a character from first K characters of given string
+	https://www.geeksforgeeks.org/lexicographically-smallest-string-formed-by-appending-a-character-from-the-first-k-characters-of-a-given-string/
+	
+-> Find character at index i in a binary string obtained after n iterations. In each iteration 0 becomes 01 and 1 becomes 10
+	https://www.geeksforgeeks.org/find-ith-index-character-in-a-binary-string-obtained-after-n-iterations/
+	
+	https://www.geeksforgeeks.org/find-ith-index-character-in-a-binary-string-obtained-after-n-iterations-set-2/  (optimised)
+	
+-> Search an element in sorted rotated array
+	https://www.geeksforgeeks.org/search-an-element-in-a-sorted-and-pivoted-array/
+	
+-> Rat in a maze problem. Maximum cheese rat can eat in a maze.
+
+===>
+
+-> Trapping Rain Water
+	https://www.geeksforgeeks.org/trapping-rain-water/
+	
+-> Given a array, total number of Binary Search Trees and Binary Trees 
+	(Catalan Number for BST, Permutations of n elements is n!, Binary Trees C(n) * n! )
+	https://www.geeksforgeeks.org/total-number-of-possible-binary-search-trees-with-n-keys/
+	
+-> Find nth catalan number
+	C(0) = 1, C(n+1) = Summation of i from 0 to N C(i) * C(n-i)
+	OR C(n) = 2n! / (n! * n+1!) i.e C(n) = 2n choose n / (n+1)
+	- Use Dynamic Programming OR 
+	
+	https://www.geeksforgeeks.org/program-nth-catalan-number
+	
+-> Majority Element (Moore's Voting Algorithm or HashMap)
+	https://www.geeksforgeeks.org/majority-element/
+	
+-> Boundary Traversal of Binary Tree (Print Left Boundary - Top down, Print Leaves - Left to Right, Print Right Boundary - Bottom Up)
+	https://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/
+	
+===>
+
+-> Find a merge points between two lists
+
+-> Given a sorted array find number of BSTs that can be formed
+
+-> Given a matrix with each cell containing number of candies, and a constraint that you can move only right or down, from top left corner to bottom right corner, find the path that gets you maximum candies
+
+-> Covert a binary tree to its mirror in place
+
+-> Given a continuous stream of strings, maintain strings such that duplicate are eliminated on the fly 
+
+-> BFS vs DFS
+
+	
+System Design Questions
+=======================	
+-> What is Caching? How is it used? Type of cache eviction policies. Implement LRU Cache
+-> Design Gaming Platform. A number of games can be hosted on this platform. User can login and select particular game.
+-> Last mile delivery challenge in case of peak seasons
+-> Design Swiggy
+-> Given millions of files process them sequentially in multiple stages and make sure it has good scalability, error handling, elegantly handles changes to the system
+-> Given a function to getFriends that gets a list of profiles of friends of a particular friend, implement a function to get shortest path between two profiles
+-> Design True Caller
+-> Design Performance Management System (Appraisal Workflow System)
+-> Design Backend Store System for managing inventory and orders with different pricing structure of items across stores
+	
+Interview Experiences
+=====================
+-> SDE 2
+	https://www.geeksforgeeks.org/amazon-interview-experience-set-434-for-sde-2/
+	
+	https://www.geeksforgeeks.org/amazon-interview-experience-set-433-sde-2-for-experienced/
+	
+	https://www.geeksforgeeks.org/amazon-interview-experience-set-373-sde-2/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

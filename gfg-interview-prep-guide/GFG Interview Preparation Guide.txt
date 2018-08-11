@@ -1,0 +1,312 @@
+GFG Interview Preparation
+=========================
+-> Preparation Guide
+	https://www.geeksforgeeks.org/placement-preparation-guide/#pt
+	
+-> Resume 
+	-> Refer Sample Resume
+	-> How tech companies like their resume
+		https://www.geeksforgeeks.org/how-tech-companies-like-their-resumes/
+	-> Resume writing internship
+		https://www.geeksforgeeks.org/resume-writing-internship/
+		
+-> Recruitment Process
+
+-> Data Structures and Algorithms
+	-> Topic wise commonly asked questions
+		https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/
+		
+	-> Company wise commonly asked questions
+		https://www.geeksforgeeks.org/must-coding-questions-company-wise/
+		
+-> Operating Systems
+	https://www.geeksforgeeks.org/operating-systems/
+	
+-> DBMS
+	https://www.geeksforgeeks.org/dbms/
+	
+-> Networks
+	https://www.geeksforgeeks.org/computer-network-tutorials/
+	
+-> Compiler Design
+	https://www.geeksforgeeks.org/compiler-design-tutorials/
+	
+-> Object Oriented Programming
+	-> Basics of OOP
+		https://www.geeksforgeeks.org/basic-concepts-of-object-oriented-programming-using-c/
+	-> Commonly Asked OOP Interview Questions
+		https://www.geeksforgeeks.org/commonly-asked-oop-interview-questions/
+	-> OOP Concepts QUIZ
+		https://www.geeksforgeeks.org/oop-concepts-gq/
+		
+
+-> FAQs 
+	https://www.geeksforgeeks.org/frequently-asked-questions-regarding-placements/
+	
+-> Arrays
+	-> Common Operations: random access, linear search, binary search
+	
+-> Strings
+	-> Common Operations: concat, sort, substring, indexOf, lastIndexOf
+
+-> Linked List
+	-> Common Operations: add, remove, iterator, isEmpty, size, reverse, sort
+
+-> Stacks
+	-> Common Operations: representation - arrays or linked list, push, pop, peek or top, isEmpty, size
+
+-> Queues
+	-> Common Operations: representation - arrays or linked list, enqueue or offer, dequeue or poll, peek, isEmpty, size
+
+-> HashMap
+	-> Common Operations: put, get, containsKey, isEmpty, size, remove, keySet, values, entrySet, handle collision - open addressing or chaining
+	
+-> HashSet
+	-> Common Operations: add, remove, contains, isEmpty, size
+
+-> Binary Trees
+	-> Common Operations: add or insert, remove or delete, isEmpty, size, traversal - pre-order or in-order or post-order or level order,
+		left or right rotation, Euler tour
+	
+-> Binary Search Trees
+	-> Common Operations: add or insert, remove or delete, contains, isEmpty, size, traversal - pre-order or in-order or post-order or level order,
+		left or right rotation, Euler tour
+
+-> Heaps
+	-> Common Operations: add or offer, remove or poll, peek, isEmpty, size
+
+-> Sorting
+	-> Popular Sorting Algorithms: Bubble Sort, Selection Sort, Insertion Sort, Heap Sort, Merge Sort, Quick Sort, Bucket Sort, Radix Sort
+
+-> Searching
+	-> Popular Searching Algorithms: Linear Search, Binary Search
+
+-> Graphs
+	-> Common Operations: representation - Adjacency List or Adjacency Matrix, traversal - BFS or DFS, 
+	
+-> Divide and Conquer
+	https://www.geeksforgeeks.org/category/algorithm/divide-and-conquer/
+	
+-> Greedy Algorithms
+	https://www.geeksforgeeks.org/category/algorithm/greedy/
+	
+-> Backtracking
+	https://www.geeksforgeeks.org/category/algorithm/backtracking/
+	
+-> Dynamic Programming
+	https://www.geeksforgeeks.org/category/algorithm/dynamic-programming/
+	
+-> Pattern Searching
+	https://www.geeksforgeeks.org/category/algorithm/pattern-searching/
+	
+	-> Naive Approach
+		https://www.geeksforgeeks.org/searching-for-patterns-set-1-naive-pattern-searching/
+		
+		https://www.geeksforgeeks.org/pattern-searching-set-4-a-naive-string-matching-algo-question/
+		
+	-> KMP Algorithm
+		https://www.geeksforgeeks.org/searching-for-patterns-set-2-kmp-algorithm/
+		
+	-> Rabin Karp Algorithm
+		https://www.geeksforgeeks.org/searching-for-patterns-set-3-rabin-karp-algorithm/
+		
+	-> Finite Automata
+		https://www.geeksforgeeks.org/searching-for-patterns-set-5-finite-automata/
+		
+		https://www.geeksforgeeks.org/pattern-searching-set-5-efficient-constructtion-of-finite-automata/
+		
+	-> Boyce Moore Algorithm
+		https://www.geeksforgeeks.org/pattern-searching-set-7-boyer-moore-algorithm-bad-character-heuristic/
+		
+	-> Suffix Tree
+		https://www.geeksforgeeks.org/pattern-searching-set-8-suffix-tree-introduction/
+	
+-> Advanced Data Structures
+	https://www.geeksforgeeks.org/category/advanced-data-structure/
+	
+	-> Disjoint Sets
+	
+	-> Tries or Prefix Trees
+		-> Common Operations: representation - using array or hashmap, search, insert, delete, prefix search
+		-> Insert and Search
+			https://www.geeksforgeeks.org/trie-insert-and-search/
+			
+			https://www.geeksforgeeks.org/trie-memory-optimization-using-hash-map/
+		-> Delete
+			https://www.geeksforgeeks.org/trie-delete/	
+		-> Advantages
+			https://www.geeksforgeeks.org/advantages-trie-data-structure/
+		-> Applications: Auto complete, Given a prefix get all words
+		-> Problems
+			-> Longest prefix of the string which is also a word
+				https://www.geeksforgeeks.org/longest-prefix-matching-a-trie-based-solution-in-java/
+				
+			-> Autocomplete using Trie
+				https://www.geeksforgeeks.org/auto-complete-feature-using-trie/
+		-> Optimisation: Compressed Tries, Ternary Search Trees
+		
+		
+	-> Ternary Search Trees
+	
+	-> Suffix Trees
+		https://www.geeksforgeeks.org/pattern-searching-set-8-suffix-tree-introduction/
+		
+		-> Problems
+			-> Searching all patterns
+				https://www.geeksforgeeks.org/suffix-tree-application-2-searching-all-patterns/
+				
+			-> Find longest repeated substring
+				http://en.wikipedia.org/wiki/Longest_repeated_substring_problem
+				
+			-> Find longest common substring
+				http://en.wikipedia.org/wiki/Longest_common_substring_problem
+				
+			-> Find longest palindrome in a string
+				http://en.wikipedia.org/wiki/Longest_palindromic_substring
+				http://en.wikipedia.org/wiki/Longest_palindromic_substring
+		
+	-> Ukkonen's Suffix Tree
+		https://www.geeksforgeeks.org/ukkonens-suffix-tree-construction-part-1/
+		
+		https://www.geeksforgeeks.org/ukkonens-suffix-tree-construction-part-2/
+		
+		https://www.geeksforgeeks.org/ukkonens-suffix-tree-construction-part-3/
+		
+		https://www.geeksforgeeks.org/ukkonens-suffix-tree-construction-part-4/
+		
+		https://www.geeksforgeeks.org/ukkonens-suffix-tree-construction-part-5/
+		
+		https://www.geeksforgeeks.org/ukkonens-suffix-tree-construction-part-6/
+		
+	
+	-> Binary Indexed Trees or Fenwick Trees
+		-> Common Operations: sum of a given range or range sum, change value of specified element or point update
+		-> Introduction and Common Operations
+			https://www.geeksforgeeks.org/binary-indexed-tree-or-fenwick-tree-2/
+		-> Problems
+			-> Range Sum and Point Update
+			-> Count Inversions
+				https://www.geeksforgeeks.org/count-inversions-array-set-3-using-bit/
+		-> Other References
+			-> Hacker Earth (More helpful)
+				https://www.hackerearth.com/practice/notes/binary-indexed-tree-or-fenwick-tree/
+			-> Top Coder
+				https://www.topcoder.com/community/data-science/data-science-tutorials/binary-indexed-trees/
+	
+	
+	-> Segment Trees
+		-> Common Operations: sum of a given range or range sum, change value of specified element or point update, range minimum query
+		-> Introduction and Common Operations
+			https://www.geeksforgeeks.org/segment-tree-set-1-sum-of-given-range/
+		-> Range Minimum Query
+			https://www.geeksforgeeks.org/segment-tree-set-1-range-minimum-query/
+		-> Problems
+			-> Range Sum and Point Update
+			-> Range Minimum Query
+				https://www.geeksforgeeks.org/range-minimum-query-for-static-array/
+			-> Count Inversions
+		-> Other References
+			-> Top Coder
+				https://www.topcoder.com/community/data-science/data-science-tutorials/range-minimum-query-and-lowest-common-ancestor/#Range_Minimum_Query_(RMQ)
+		
+	
+	-> Self Balancing BSTs
+		-> Comparison
+			-> See PNG
+			https://www.geeksforgeeks.org/self-balancing-binary-search-trees-comparisons/
+			
+		-> Red Black Trees (Prefer when frequent insertions and deletions)
+			-> Common Operations: insert, delete, search
+			-> Introduction 
+				https://www.geeksforgeeks.org/red-black-tree-set-1-introduction-2/
+			-> Insertion
+				https://www.geeksforgeeks.org/red-black-tree-set-2-insert/
+			-> Deletion
+				https://www.geeksforgeeks.org/red-black-tree-set-3-delete-2/
+			-> Applications: Map, Set, MultiSet, MultiMap
+			-> Other References
+				-> MIT Lecture
+					https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-introduction-to-algorithms-sma-5503-fall-2005/video-lectures/lecture-10-red-black-trees-rotations-insertions-deletions/
+					Refer PDF
+				-> Deletion from Red Black Trees
+					Refer PDF
+				
+		-> AVL Trees (Prefer when frequent retrievals)
+			-> Common Operations: insert, delete, search
+			-> Insertion
+				https://www.geeksforgeeks.org/avl-tree-set-1-insertion/
+			-> Deletion
+				https://www.geeksforgeeks.org/avl-tree-set-2-deletion/
+			-> Applications: Database Transactions
+			
+		
+		-> Splay Trees (Prefer when same element is retrieved multiple times)
+			-> Common Operations: insert, delete, search
+			-> Search
+				https://www.geeksforgeeks.org/splay-tree-set-1-insert/
+			-> Insertion 
+				https://www.geeksforgeeks.org/splay-tree-set-2-insert-delete/
+			-> Deletion
+				https://www.geeksforgeeks.org/splay-tree-set-3-delete/
+			-> Applications: Cache Implementations, Garbage Collection Algorithms, Windows NT (virtual memory, networking, file system code), GCC Compiler, GNU C++ Library, 
+				SED Editor, Fore Systems Network Routers, Unix Malloc, Linux Loadable Kernel Modules
+			-> Other References
+				-> Berkeley
+					https://people.eecs.berkeley.edu/~jrs/61b/lec/36
+				-> Cornell
+					http://www.cs.cornell.edu/courses/cs3110/2009fa/recitations/rec-splay.html
+				-> University of Washington
+					Refer PPT
+					
+		-> AA Trees
+		
+		-> ScapeGoat Trees
+	
+		
+	-> Threaded Binary Trees
+	
+	-> Treap
+	
+	-> B Trees
+	
+	-> B+ Trees
+	
+	-> Interval Tree
+	
+	-> K Dimensional Tree
+	
+	-> Skip List
+	
+	-> Quad Trees
+	
+	-> BK or Burkhard Keller Tree
+	
+	-> Palindromic Tree
+	
+	
+	
+	-> Forward Index
+		-> Examples: Index or Table of Contents, DNS Lookup
+		
+	-> Inverted Index
+		->  Examples: Index of terms at the back of book, Reverse Lookup
+		
+	-> Dope Vector
+		https://www.geeksforgeeks.org/dope-vector-gap-buffer-arrays/
+		
+	-> Wavelet Tree
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
