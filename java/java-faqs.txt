@@ -1,0 +1,204 @@
+Overview
+========
+
+-> Java Naming Conventions
+	https://www.geeksforgeeks.org/java-naming-conventions/	
+
+-> How JVM works - JVM Architecture ? 
+	Class Loader 
+	JVM Memory - Method Area, Heap Area, Stack Area, PC Registers, Native Method Stacks
+	Execution Engine (Interpreter, JIT Compiler, Garbage Collector)
+	Native Method Interface
+	Native Method Libraries
+
+	Class loader subsystem responsible for Loading, Linking, 
+	Initialization by Boostrap Clas Loader or Extension Class Loader or Application Class Loader
+
+	https://www.geeksforgeeks.org/jvm-works-jvm-architecture/
+
+-> JVM Stack Area
+	Stack for Each Thread 
+	Each entry in stack is called Stack Frame or Activation Record
+	Each Stack Frame consists of Local Variable Array, Operand Stack, Frame Data
+
+	https://www.geeksforgeeks.org/java-virtual-machine-jvm-stack-area/
+
+-> Java Class File
+	Magic Number at start of class file: 0xCAFEBABE	
+	
+	https://www.geeksforgeeks.org/java-class-file/
+
+-> Difference between JDK, JRE and JVM
+	https://www.geeksforgeeks.org/differences-jdk-jre-jvm/
+
+-> How is Java Platform Independent
+	Java is platform independent but JVM is platform dependent
+	Bytecode makes Java platform independent
+
+	https://www.geeksforgeeks.org/java-platform-independent/
+
+-> JDBC Drivers
+	https://www.geeksforgeeks.org/jdbc-drivers/
+
+-> Class Name and File Name
+	https://www.geeksforgeeks.org/myth-file-name-class-name-java/
+
+-> Run java file from different directory
+	https://www.geeksforgeeks.org/run-java-class-file-different-directory/
+
+-> Using predefined class name as class or variable name in Java
+	https://www.geeksforgeeks.org/using-predefined-class-name-class-variable-name-java/
+
+
+Garbage Collection
+==================
+
+-> Garbage Collection in Java 
+	https://www.geeksforgeeks.org/garbage-collection-java/
+
+	https://www.geeksforgeeks.org/output-of-java-programs-set-10-garbage-collection/
+	
+-> Island of Isolation
+	https://www.geeksforgeeks.org/island-of-isolation-in-java/
+
+	https://stackoverflow.com/questions/792831/island-of-isolation-of-garbage-collection
+
+-> How to make object eligible for garbage collection
+	https://www.geeksforgeeks.org/how-to-make-object-eligible-for-garbage-collection/
+	
+-> Mark and Sweep Algorithm
+	https://www.geeksforgeeks.org/mark-and-sweep-garbage-collection-algorithm/
+
+-> Automatic Resource Management with try-with-resources
+	https://www.geeksforgeeks.org/automatic-resource-management-java/
+
+
+Reflection
+==========
+
+-> Reflection in Java
+	https://www.geeksforgeeks.org/reflection-in-java/
+
+-> new operator vs newInstance()
+	https://www.geeksforgeeks.org/new-operator-vs-newinstance-method-java/
+
+-> instanceof operator vs isInstance()
+	https://www.geeksforgeeks.org/instanceof-operator-vs-isinstance-method-in-java/
+
+
+Multithreading and Java Runtime
+===============================
+
+-> Runtime class in Java
+
+	Runtime.getRuntime().freeMemory()
+	Runtime.getRuntime().maxMemory()
+	Runtime.getRuntime().totalMemory()
+	Runtime.getRuntime().availableProcessors()
+	Runtime.getRuntime().exec(String command)
+	Runtime.getRuntime().exec(String cmdArray[])
+	Runtime.getRuntime().exec(String command, String envp[])
+	Runtime.getRuntime().exec(String command, String envp[], File dir)
+	Runtime.getRuntime().exec(String cmdArray[], String envp[])
+	Runtime.getRuntime().exec(String cmdArray[], String envp[], File dir)
+	Runtime.getRuntime().traceInstructions(boolean on)
+	Runtime.getRuntime().traceMethodCalls(boolean on)
+	Runtime.getRuntime().load(String fileName)
+	Runtime.getRuntime().loadLibrary(String libName)
+	Runtime.getRuntime().gc()
+	Runtime.getRuntime().runFinalization()
+	Runtime.getRuntime().exit(int status)
+	Runtime.getRuntime().halt(int status)
+	Runtime.getRuntime().addShutdownHook(Thread hook)
+	Runtime.getRuntime().removeShutdownHook(Thread hook)
+
+	https://www.geeksforgeeks.org/java-lang-runtime-class-in-java/
+
+	https://docs.oracle.com/javase/7/docs/api/java/lang/Runtime.html
+
+-> JVM Shutdown hook
+	https://www.geeksforgeeks.org/jvm-shutdown-hook-java/
+
+-> Daemon Thread in Java
+	https://www.geeksforgeeks.org/daemon-thread-java/
+
+
+Collections
+===========
+
+-> HashMap in Java
+	https://www.cdn.geeksforgeeks.org/java-util-hashmap-in-java/
+
+-> HashSet in Java
+	https://www.geeksforgeeks.org/hashset-in-java/
+
+-> Internal working of HashMap in Java
+	https://www.geeksforgeeks.org/internal-working-of-hashmap-java/
+
+-> Internal working of HashSet in Java (How it maintains uniqueness)
+	https://www.geeksforgeeks.org/internal-working-of-sethashset-in-java/
+
+-> HashMap vs Hashtable
+	https://www.geeksforgeeks.org/differences-between-hashmap-and-hashtable-in-java/
+
+-> HashMap and TreeMap
+	https://www.geeksforgeeks.org/hashmap-treemap-java/
+
+-> HashMap, LinkedHashMap, TreeMap
+	https://www.geeksforgeeks.org/differences-treemap-hashmap-linkedhashmap-java/
+
+-> Advantages of BST over HashMap
+	https://www.geeksforgeeks.org/advantages-of-bst-over-hash-table/
+
+-> LinkedHashMap
+	https://www.geeksforgeeks.org/linkedhashmap-class-java-examples/
+
+-> EnumSet 
+	https://www.geeksforgeeks.org/enumset-class-java/
+
+
+Interfaces and Abstract Classes
+===============================
+
+-> Interfaces in Java
+	https://www.geeksforgeeks.org/interfaces-in-java/
+
+-> Access Specifiers for members in Interface
+	https://www.geeksforgeeks.org/g-fact-73/
+
+-> Access Specifiers in Java
+	https://www.geeksforgeeks.org/access-specifiers-for-classes-or-interfaces-in-java/
+
+-> Abstract Classes in Java
+	https://www.geeksforgeeks.org/abstract-classes-in-java/
+
+-> Interfaces vs Abstract Classes
+	https://www.geeksforgeeks.org/difference-between-abstract-class-and-interface-in-java/
+
+-> Marker Interface
+	https://www.geeksforgeeks.org/marker-interface-java/
+
+-> Nested Interfaces
+	https://www.geeksforgeeks.org/interface-nested-class-another-interface/
+
+-> Nested Classes
+	-> Static Nested Class
+	-> Inner Class
+		-> Local Inner Class
+		-> Anomymous Class
+
+
+	https://www.geeksforgeeks.org/nested-classes-java/
+
+	https://www.geeksforgeeks.org/inner-class-java/
+
+-> Functional Interface
+	-> Have only one abstract method, but can have any number of default methods
+	-> E.g Runnable
+	-> Use @FunctionalInterface Annotation to indicate Functional Interface
+
+	https://www.geeksforgeeks.org/functional-interfaces-java/
+
+-> Cloneable, Serializable, Comparator, Comparable, Runnable
+
+

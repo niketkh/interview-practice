@@ -1,0 +1,419 @@
+-> Why is it faster to process sorted array than an unsorted array ?
+	A: Branch Predictor
+	
+	https://stackoverflow.com/questions/11227809/why-is-it-faster-to-process-a-sorted-array-than-an-unsorted-array
+
+-> Why is subtracting these two dates in 1927 gives strange result ?
+	A: Clock changes
+
+	https://stackoverflow.com/questions/6841333/why-is-subtracting-these-two-times-in-1927-giving-a-strange-result
+
+	https://www.timeanddate.com/time/change/china/shanghai?year=1927
+
+-> Is Java "pass-by-reference" or "pass-by-value" ?
+	A: pass by value (where value is reference in case of objects)
+
+	https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value
+
+	http://www.javadude.com/articles/passbyvalue.htm
+
+-> Avoiding != null statements
+	A: Use asserts OR 
+		Ensure null is not passed OR 
+		Use IDE specific annotations like @NotNull or @Nullable OR
+		See below link for more options
+
+	https://stackoverflow.com/questions/271526/avoiding-null-statements
+
+-> Why don't Java's +=, -=, *=, /= compound assignment operators require casting?
+	A: As they include an implicit cast as mentioned in Java Language Specification
+
+	https://stackoverflow.com/questions/8710619/why-dont-javas-compound-assignment-operators-require-casting
+
+	http://docs.oracle.com/javase/specs/jls/se8/html/jls-15.html#jls-15.26.2
+
+
+-> Read / Convert InputStream to String
+	A: Use Java 8 Stream API OR
+		Use Java 8 Parallel Stream API OR
+		Use Java Scanner Tricks OR
+		Use InputStreamReader and StringBuilder OR
+		Use IOUtils from Apache Commons OR
+		Use CharStream from Guava OR
+		See below link for more options
+
+	https://stackoverflow.com/questions/309424/read-convert-an-inputstream-to-a-string
+
+	https://community.oracle.com/blogs/pat/2004/10/23/stupid-scanner-tricks
+
+-> Difference between HashMap and Hashtable
+	A:	1) Not Synchronized vs Synchronized
+		2) Allows one null key and any number of null values vs Does not allow null keys or values
+		3) LinkedHashMap a subclass of HashMap allows for predictable iteration order vs Not possible with Hashtable
+	
+	https://stackoverflow.com/questions/40471/differences-between-hashmap-and-hashtable
+
+-> Create ArrayList from Array
+	A: Arrays.asList(array) 
+
+	https://stackoverflow.com/questions/157944/create-arraylist-from-array
+
+-> Create Array from ArrayList
+	A: list.toArray()
+
+
+-> Why is char[] preferred over String for passwords ?
+	A: To prevent from accidental logging and to not rely on garbage collection to rid of data
+	
+	https://stackoverflow.com/questions/8881291/why-is-char-preferred-over-string-for-passwords
+
+
+-> How do i generate random integers within a specific range in java ?
+	A: 	Random random = new Random(0);
+		min + random.nextInt(max - min + 1) OR
+
+		min + (int) Math.random() * (max - min + 1)  OR
+
+		ThreadLocalRandom.current().nextInt(min, max + 1)
+
+	https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
+
+
+-> How to efficiently iterate over Map ?
+	A: 	
+		Use for each and Map.Entry
+
+		Map<String, String> map = ...
+		for (Map.Entry<String, String> entry : map.entrySet())
+		{
+		    System.out.println(entry.getKey() + "/" + entry.getValue());
+		}
+
+		OR
+
+		Use Iterator and Map.Entry
+
+		OR
+
+		Use forEach from Java 8
+		map.forEach((k, v) -> System.out.println(k + "=" + v));	
+
+	https://stackoverflow.com/questions/46898/how-to-efficiently-iterate-over-each-entry-in-a-map
+
+	https://stackoverflow.com/questions/1066589/iterate-through-a-hashmap
+
+-> Create a memory leak with Java
+	A: Static field holding object reference OR
+		Calling intern() on lengthy strings OR
+		Unclosed / Open streams (file, network) OR
+		Unclosed connections OR
+		Memory allocated through native methods
+
+	
+	https://stackoverflow.com/questions/6470651/creating-a-memory-leak-with-java
+
+-> When to use LinkedList over ArrayList
+	
+	https://stackoverflow.com/questions/322715/when-to-use-linkedlist-over-arraylist
+
+-> Convert String to Integer
+	A: Integer.parseInt(str) OR
+		Integer.valueOf(str)
+
+	https://stackoverflow.com/questions/5585779/how-do-i-convert-a-string-to-an-int-in-java
+
+-> Difference public, private, protected, default access modifiers
+
+	https://stackoverflow.com/questions/215497/in-java-difference-between-package-private-public-protected-and-private
+
+-> What is serialVersionUID and why should I use it ?
+
+	https://stackoverflow.com/questions/285793/what-is-a-serialversionuid-and-why-should-i-use-it
+
+
+-> Initialization of ArrayList in one line
+	A: List<Integer> list = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+
+		OR
+
+		Making an anonymous inner class with an instance initializer (also known as an "double brace initialization")
+
+		ArrayList<String> list = new ArrayList<String>() {{
+		    add("A");
+		    add("B");
+		    add("C");
+		}};
+
+	https://stackoverflow.com/questions/1005073/initialization-of-an-arraylist-in-one-line
+
+-> Why is printing "B" dramatically slower than printing "#" on Netbeans console?
+	
+	https://stackoverflow.com/questions/21947452/why-is-printing-b-dramatically-slower-than-printing
+
+-> How can I create executable JAR with dependencies using Maven ?
+	
+	https://stackoverflow.com/questions/574594/how-can-i-create-an-executable-jar-with-dependencies-using-maven
+
+-> Does finally always execute in Java
+
+	https://stackoverflow.com/questions/65035/does-finally-always-execute-in-java
+
+
+-> How to check if array contains a value ?
+	A: 	Non primitives or Object
+		Arrays.asList(array).contains(value) 
+
+		Primitives
+		IntStream.of(array).anyMatch(x -> x == value)
+		Similarly, LongStream or DoubleStream
+
+	https://stackoverflow.com/questions/1128723/how-can-i-test-if-an-array-contains-a-certain-value
+
+-> How do I call one constructor from another ?
+	A: this() within a class OR 
+		super() with parent class
+
+	https://stackoverflow.com/questions/285177/how-do-i-call-one-constructor-from-another-in-java
+
+-> Implements Runnable vs Extends Thread
+
+	https://stackoverflow.com/questions/541487/implements-runnable-vs-extends-thread
+
+
+-> What is Reflection and why is it useful ?
+
+	https://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful
+		
+
+-> How do you assert that certain exception is thrown in JUnit4 tests ?
+	
+	https://stackoverflow.com/questions/156503/how-do-you-assert-that-a-certain-exception-is-thrown-in-junit-4-tests
+
+->  How do you declare and initialise array in Java ?
+	
+	https://stackoverflow.com/questions/1200621/how-do-i-declare-and-initialize-an-array-in-java
+
+-> Breaking out of nested loops
+	A: Use function for inner loop OR
+		Use label 
+
+	https://stackoverflow.com/questions/886955/breaking-out-of-nested-loops-in-java
+
+-> Simplest way to print an array
+	A: Arrays.toString(), Arrays.deepToString(), Arrays.asList()	
+
+	https://stackoverflow.com/questions/409784/whats-the-simplest-way-to-print-a-java-array
+
+
+-> What's the difference between @Component, @Repository, @Service, @Controller, @RestController
+
+	https://stackoverflow.com/questions/6827752/whats-the-difference-between-component-repository-service-annotations-in
+
+-> Java inner class and static nested class
+	
+	https://stackoverflow.com/questions/70324/java-inner-class-and-static-nested-class
+
+-> Generate a random alphanumeric string
+	
+	https://stackoverflow.com/questions/41107/how-to-generate-a-random-alpha-numeric-string
+
+
+-> Comparing java enums members with == or equals()
+	A: prefer ==
+
+	https://stackoverflow.com/questions/1750435/comparing-java-enum-members-or-equals
+
+-> Sort a Map by values
+	A: 	Use stream 
+		map.entrySet().stream().sorted(Map.Entry.comparingByValue()).collect(Collectors.toList());
+
+		OR
+
+		map.entrySet().stream().sorted(Map.Entry.comparingbyValue()).map(e -> e.getKey()).collect(Collectors.toList());
+
+		OR
+
+		map.entrySet().stream().sorted(Map.Entry.comparingByValue()).collect(
+			Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (oldValue, newValue) -> oldValue, LinkedHashMap::new));
+
+		OR
+
+		list = new ArrayList<>(map.entrySet());
+
+		Collections.sort(list, comparator based on value of Map.Entry);
+
+		https://stackoverflow.com/questions/109383/sort-a-mapkey-value-by-values
+
+
+-> What is Java Bean ?
+
+	https://stackoverflow.com/questions/3295496/what-is-a-javabean-exactly
+
+-> Difference between StringBuilder and StringBuffer
+
+	https://stackoverflow.com/questions/355089/difference-between-stringbuilder-and-stringbuffer
+
+
+-> Why use getters and setters
+	A: encapsulation, hiding internal representation, 
+		allows for adding additional functionality like validation at later point of time, providing debugging interception points,
+		improved interoperability with libraries, allows for different access levels for getters and setters
+
+	https://stackoverflow.com/questions/1568091/why-use-getters-and-setters-accessors
+
+-> Does Java support default arguments ?
+	A: No
+
+	https://stackoverflow.com/questions/1568091/why-use-getters-and-setters-accessors
+
+-> How to concatenate two arrays
+	A: 	Java 8
+		String both[] = Stream.concat(Arrays.stream(a), Arrays.stream(b)).toArray(String::new);
+
+		OR
+
+		Java 8
+		String both[] = Stream.of(a, b).flatMap(Stream::of).toArray(String::new);
+
+		OR
+
+		Java 7
+		// concat two arrays
+		public static <T> T[] concat(T[] first, T[] second) {
+		  T[] result = Arrays.copyOf(first, first.length + second.length);
+		  System.arraycopy(second, 0, result, first.length, second.length);
+		  return result;
+		}
+
+		// concat multiple arrays
+		public static <T> T[] concatAll(T[] first, T[]... rest) {
+		  int totalLength = first.length;
+		  for (T[] array : rest) {
+		    totalLength += array.length;
+		  }
+		  T[] result = Arrays.copyOf(first, totalLength);
+		  int offset = first.length;
+		  for (T[] array : rest) {
+		    System.arraycopy(array, 0, result, offset, array.length);
+		    offset += array.length;
+		  }
+		  return result;
+		}
+
+		OR
+
+		// Concatenate arrays of two different types by picking the most general type as the component type of the result
+		// Works with primitives and objects
+		public static <T> T concatenate(T a, T b) {
+		    if (!a.getClass().isArray() || !b.getClass().isArray()) {
+		        throw new IllegalArgumentException();
+		    }
+
+		    Class<?> resCompType;
+		    Class<?> aCompType = a.getClass().getComponentType();
+		    Class<?> bCompType = b.getClass().getComponentType();
+
+		    if (aCompType.isAssignableFrom(bCompType)) {
+		        resCompType = aCompType;
+		    } else if (bCompType.isAssignableFrom(aCompType)) {
+		        resCompType = bCompType;
+		    } else {
+		        throw new IllegalArgumentException();
+		    }
+
+		    int aLen = Array.getLength(a);
+		    int bLen = Array.getLength(b);
+
+		    @SuppressWarnings("unchecked")
+		    T result = (T) Array.newInstance(resCompType, aLen + bLen);
+		    System.arraycopy(a, 0, result, 0, aLen);
+		    System.arraycopy(b, 0, result, aLen, bLen);        
+
+		    return result;
+		}
+
+	https://stackoverflow.com/questions/80476/how-can-i-concatenate-two-arrays-in-java
+
+
+-> How do I create a file and write to it in Java ?
+	-> A:	PrintWriter writer = new PrintWriter("the-file-name.txt", "UTF-8");
+			writer.println("The first line");
+			writer.println("The second line");
+			writer.close();
+
+			OR
+
+			byte data[] = ...
+			FileOutputStream out = new FileOutputStream("the-file-name");
+			out.write(data);
+			out.close();
+
+			OR
+
+			List<String> lines = Arrays.asList("The first line", "The second line");
+			Path file = Paths.get("the-file-name.txt");
+			Files.write(file, lines, Charset.forName("UTF-8"));
+			//Files.write(file, lines, Charset.forName("UTF-8"), StandardOpenOption.APPEND);
+
+			OR
+
+			byte data[] = ...
+			Path file = Paths.get("the-file-name");
+			Files.write(file, data);
+			//Files.write(file, data, StandardOpenOption.APPEND);
+
+			OR
+
+			try (Writer writer = new BufferedWriter(new OutputStreamWriter(
+			              new FileOutputStream("filename.txt"), "utf-8"))) {
+			   writer.write("something");
+			}
+
+	https://stackoverflow.com/questions/2885173/how-do-i-create-a-file-and-write-to-it-in-java
+
+-> How do I create java string from contents of a file
+	static String readFile(String path, Charset encoding) 
+	  throws IOException 
+	{
+	  byte[] encoded = Files.readAllBytes(Paths.get(path));
+	  return new String(encoded, encoding);
+	}
+
+	OR
+
+	List<String> lines = Files.readAllLines(Paths.get(path), encoding);
+
+	OR
+
+	try (BufferedReader r = Files.newBufferedReader(Paths.get(path), encoding)) {
+	  return r.lines().collect(Collectors.toList());
+	}
+
+	OR
+
+	try (Stream<String> lines = Files.lines(Paths.get(path), encoding)) {
+		lines.forEach(System.out::println);
+	}
+
+	OR
+
+	Scanner scanner = new Scanner( new File("poem.txt"), "UTF-8" );
+	String text = scanner.useDelimiter("\\A").next();
+	scanner.close(); // Put this call in a finally block
+	
+	https://stackoverflow.com/questions/326390/how-do-i-create-a-java-string-from-the-contents-of-a-file
+
+
+-> Convert stack trace to String
+	A: 	StringWriter sw = new StringWriter();
+		e.printStackTrace(new PrintWriter(sw));
+		String exceptionAsString = sw.toString();
+	
+	https://stackoverflow.com/questions/1149703/how-can-i-convert-a-stack-trace-to-a-string
+
+-> Is null check needed before calling instanceof operator
+	A: No, as null instanceof someClass is always false
+
+	https://stackoverflow.com/questions/2950319/is-null-check-needed-before-calling-instanceof
+
+	https://docs.oracle.com/javase/specs/jls/se10/html/jls-15.html#jls-15.20.2
